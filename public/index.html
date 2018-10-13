@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Rather</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/public/css/style_general.css">
+        <link rel="stylesheet" href="/bulma">
+    </head>
+    <body>
+        <div id="topbar">
+        <div class="side-top">
+                <h1>Rather</h1>
+                <p>It's about time we learnt to talk</p>
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="side"></div>
+            <div class="main">
+                <form id="login-form">
+                    <input class="input is-rounded" type="text" placeholder="Username" name="username" onfocus="resetError()" required>
+                    <input class="input is-rounded" type="password" placeholder="Password" name="password" onfocus="resetError()" required>
+                    <button class="button is-success is-outlined is-rounded" type="submit">Login!</button>
+                    
+                    <a class="button is-info is-outlined is-rounded" href="signup">Sign up!</a>
+                    <div id="login-error" class="has-text-danger"><p>Error: Please check username/password</p></div>
+                </form>
+                
+            </div>
+        </div>
+        <div id="bottombar">
+            <p>Rather &copy; 2018 <br><a href="harshrana.com">Harsh Rana</a></p>
+        </div>
+        
+        
+        <script src="/public/js/error-scripts.js"></script>
+    </body>
+
+</html>

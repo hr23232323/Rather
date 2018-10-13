@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Rather</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/public/css/style_general.css">
+        <link rel="stylesheet" href="/bulma">
+        <script src="/public/js/scroll-entrance.js"></script>
+        <style>
+            /* Data slide in Credits: https://github.com/andycaygill/scroll-entrance*/
+            /* Ensure elements are hidden while ScrollEntrance is loading */
+            [data-entrance] { visibility: hidden; }
+        </style>
+    
+    </head>
+    <body>
+        <div id="topbar">
+            <div class="side-top">
+                <h1>Rather</h1>
+                <p>It's about time we learnt to talk</p>
+            </div>
+            <div class="main-top" data-entrance="fade" data-entrance-delay="300">
+                <p id="username">Hi </p>
+                <a href="logout">Logout</a>
+            </div>
+        </div>  
+        <div id="content" data-entrance="from-bottom">
+        <div id="question-box">
+            <form id="new-question" action="/newPost" method="POST">
+                <div id="question-button">
+                    <input class="input is-rounded" id="form-question" type="text" placeholder="Question" name="question" required>
+                    <button class="button is-success is-outlined is-rounded" id="submit-button" type="submit">Submit</button>   
+                </div>
+                <div class="form-option">
+                    <input class="input is-rounded" id="form-answer1" class="form-answer" type="text" placeholder="Answer 1" name="answer1" required>
+                    <input id="form-radio1" class="form-radio" type="radio" value="answer1" name="answer" required>
+                </div>
+                <div class="form-option">
+                    <input class="input is-rounded" id="form-answer2" class="form-answer" type="text" placeholder="Answer 2" name="answer2" required>
+                    <input id="form-radio2" class="form-radio" type="radio" value="answer2" name="answer" required>
+                </div>
+                
+            </form>
+            </div>
+        
+            <div id="feed">
+            </div>
+
+            <div id="bottombar">
+                <p>Rather &copy; 2018 <br><a href="harshrana.com">Harsh Rana</a></p>
+            </div>
+        </div>
+        
+        <script src="/public/js/scripts.js"></script>
+        <script src="/public/js/scripts2.js"></script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Rather</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/public/css/style_general.css">
+        
+        <link rel="stylesheet" href="/bulma">
+        <script src="/public/js/scroll-entrance.js"></script>
+        <style>
+            /* Data slide in Credits: https://github.com/andycaygill/scroll-entrance*/
+            /* Ensure elements are hidden while ScrollEntrance is loading */
+            [data-entrance] { visibility: hidden; }
+        </style>
+    </head>
+    <body>
+        <div id="topbar">
+            <div class="side-top">
+                <h1>Rather</h1>
+                <p>It's about time we learnt to talk</p>
+            </div>
+            <div class="main-top" data-entrance="fade" data-entrance-delay="300">
+                <a href="/login">Back to home</a>
+            </div>
+        </div>
+        <div class="columns" id="main-content" data-entrance="fade">
+                <form class="column columns" id="new-question" action="/upvote" method="POST">
+                    <div id="answer1-container" class="form-option column">
+                        <label class="labl" name="answer1">
+                            <input id="form-radio1" class="form-radio" type="radio" value="answer1" name="answer">
+                            <div id="answer1-div"><p id="answer1"></p></div>
+                        </label>
+                    </div>
+                    <div id="question-button" class= "column">
+                        <label id="question" name="question"></label><br>
+                        <button class="button is-success is-outlined is-rounded" id="submit-button" type="submit">Submit</button>   
+                    </div>
+                    
+                    <div id="answer2-container" class="form-option column">
+                        <label class="labl" name="answer2">
+                            <input id="form-radio2" class="form-radio" type="radio" value="answer2" name="answer">
+                            <div id="answer2-div"><p id="answer2"></p></div>
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+
+        <div id="bottombar">
+                <p>Rather &copy; 2018 <br><a href="harshrana.com">Harsh Rana</a></p>
+            </div>
+        <script src="/public/js/scripts3.js"></script>
+    </body>
+
+</html>

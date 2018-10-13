@@ -1,0 +1,45 @@
+{
+  "name": "a4",
+  "version": "1.0.0",
+  "description": "A new form of social media, centered around opinions",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bulma": "^0.7.1",
+    "client-sessions": "^0.8.0",
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.17",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "scroll-entrance": "^1.0.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "socket.io-mongodb": "^1.1.1",
+    "validator": "^10.8.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.4",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hr23232323/a4-webapp.git"
+  },
+  "author": "Harsh Rana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hr23232323/a4-webapp/issues"
+  },
+  "homepage": "https://github.com/hr23232323/a4-webapp#readme"
+}

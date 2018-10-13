@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Rather</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/public/css/style_general.css">
+        <link rel="stylesheet" href="/bulma">
+    </head>
+    <body data-entrance="fade">
+        <div id="topbar">
+            <div class="side-top">
+                <h1>Rather</h1>
+                <p>It's about time we learnt to talk</p>
+            </div>
+            <div class="main" data-entrance="fade" data-entrance-delay="300">
+                
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="side"></div>
+            <div class="main">
+                <form id="signup-form">
+                    <div class="control">
+                        <input class="input is-rounded" type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="control">
+                        <input class="input is-rounded" type="text" placeholder="Username" name="username" onfocus="resetError()" required>
+                    </div>
+                    <div class="control">
+                        <input class="input is-rounded" type="password" placeholder="Password" name="password" required>         
+                    </div>
+                    <button class="button is-success is-outlined is-rounded" type="submit">Sign up!</button>
+                    <a class="button is-info is-outlined is-rounded"  href="/login">Back to login</a>
+                    <div id="signup-error" class="has-text-danger"><p>Error: Username is already taken</p></div>
+                    <div id="signup-success" class="has-text-success"><p>Congrats; You're now a member! (redirecting you to login...)</p></div>
+                </form>
+            </div>
+        </div>
+        <div id="bottombar">
+            <p>Rather &copy; 2018 <br><a href="harshrana.com">Harsh Rana</a></p>
+        </div>
+        
+        
+        <script src="/public/js/error-scripts2.js"></script>
+    </body>
+
+</html>

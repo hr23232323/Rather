@@ -1,0 +1,183 @@
+/*
+    NEW QUESTION FORM
+*/
+
+
+:root {
+    --question-box: #ffe772;
+    --card-color: #feefa9;
+    --navbar-color: #FFE14F;
+    --opt1-color: #469d89;
+    --opt2-color:#804515;
+    --light-text:#fafafa;
+}
+
+#form-question{
+    display: inline-block;
+    width: 60%;
+}
+
+#form-button{
+    width 40%;
+}
+
+#question-button{
+    margin: 10px auto;
+}
+
+.form-option{
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;
+}
+.form-answer{
+    display: block;
+    width: 100%;
+}
+
+/*
+    RESULTS DIV
+*/
+
+#feed{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#question-box{
+    width: 60%;
+    margin: 10px auto;
+}
+
+
+#new-question{
+    text-align: center;
+}
+
+.question-tile p{
+    background-color: var(--card-color);
+    box-sizing: border-box;
+    
+}
+
+.question-tile {
+    color: #333;
+    text-decoration:none;
+}
+.question-tile:hover p{
+    background-color: var(--navbar-color);
+}
+
+#question-box{
+    padding: 20px;
+    background-color: var(--question-box);
+    box-shadow: 1px 1px 1px #777;
+}
+
+#question-box input, #question-box button{
+    margin: 5px;
+}
+
+
+.question, .answer{
+    
+    box-shadow: 1px 1px 1px #333;
+}
+
+.question{
+    display: block;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.answer{
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+}
+
+#feed .answer1{
+    background-color: var(--opt1-color);
+    color: var(--light-text);
+    
+}
+
+#feed .answer2{
+    background-color: var(--opt2-color);
+    color: var(--light-text);
+}
+
+#login-form, #signup-form{
+    width: 60%;
+}
+
+.column{
+      display: flex;
+  align-items: center;
+}
+
+/*Vote CSS*/
+
+.labl {
+    display : block;
+    width: 100%;
+}
+.labl > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.labl > input + div{ /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.labl > input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+    background-color: #ffd6bb;
+    border: 10px solid #ff6600;
+}
+
+#answer1-div{
+    height: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;  
+    background-color: var(--opt1-color);
+}
+#answer1-div p{
+    display: block;
+    margin: auto auto;
+    color: var(--light-text);
+    font-size: 2.4em;
+}
+
+#answer2-div{
+    height: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center; 
+    background-color: var(--opt2-color);
+}
+#answer2-div p{
+    display: block;
+    margin: auto auto;
+    color: var(--light-text);
+    font-size: 2.4em;
+}
+
+.columns{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/*LOGIN, SIGNUP ERROR*/
+
+#login-error, #signup-error{
+    display: none;
+}
+
+#signup-success{
+    display: none;
+}
